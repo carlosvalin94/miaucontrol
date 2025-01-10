@@ -1,6 +1,6 @@
 # Miaucontrol
 
-Simple Application to control my Elgato Key Light
+Simple GUI Application to control my Elgato Key Light
 
 # Requirements
 
@@ -18,7 +18,7 @@ Local Network: Both the PC and Elgato Key Light must be on the same network.
 ## Installation
 
 
-You can install it by using this commnad:
+You can install it by using this command:
 
 sh miaucontrol.sh
 
@@ -33,10 +33,10 @@ Just launch the script again, It will detect it and ask for removal
 
 ### Hint
 
-The app will find the lights IP automatically, if it doesn't you can write the IP name manually, to find it you can use this command:
+The app will automatically detect the light's IP. If it doesn't, you can enter the IP manually. To find it, you can use the following command:
 
 avahi-browse -r -t _elg._tcp
 
 ### I need your help
 
-I have no much time to spend on this, if you do, feel free to fork this and upload the app to flathub or snapcraft
+I don't have much time to spend on this project. If you do, feel free to fork it and upload the app to Flathub or Snapcraft.
