@@ -1,67 +1,42 @@
-# keylights
+# Miaucontrol
 
-Simple bash script to control my Elgato Key Light Air
+Simple Application to control my Elgato Key Light
 
-Depends on: avahi-resolve, curl, awk, jq
+# Requirements
 
-## Usage
+Operating System: Linux (any modern distribution).
+Avahi: Required for device discovery.
+Python: Version 3.6 or higher.
 
-`./keylights -h <hostname> <action>`
+Python Libraries:
+PyGObject (Gtk 4.0)
+Requests
 
-### Examples
+Compatible Hardware: Elgato Key Light (API HTTP on port 9123).
+Local Network: Both the PC and Elgato Key Light must be on the same network. 
 
-#### Turn light on/off
+## Installation
 
-Using hostname resolution:
 
-```bash
-./keylights -h=elgato-key-light-air-12ab.local on
-./keylights -h=elgato-key-light-air-12ab.local off
-./keylights -h=elgato-key-light-air-12ab.local toggle
-```
+You can install it by using this commnad:
 
-Using IP address:
+sh miaucontrol.sh
 
-```bash
-./keylights -h=192.168.0.10 on
-./keylights -h=192.168.0.10 off
-./keylights -h=192.168.0.10 toggle
-```
+## To uninstall
 
-#### Turn brightness up/down
+Just launch the script again, It will detect it and ask for removal
 
-Using hostname resolution:
+### Current UI
+![Screenshot From 2025-01-10 18-27-55](https://github.com/user-attachments/assets/aab0b587-3d62-42a2-9a54-ce4f580f311d)
 
-```bash
-./keylights -h=elgato-key-light-air-12ab.local b+
-./keylights -h=elgato-key-light-air-12ab.local b-
-```
-
-Using IP address:
-
-```bash
-./keylights -h=192.168.0.10 b+
-./keylights -h=192.168.0.10 b-
-```
-
-#### Turn temperature up/down
-
-Using hostname resolution:
-
-```bash
-./keylights -h=elgato-key-light-air-12ab.local t+
-./keylights -h=elgato-key-light-air-12ab.local t-
-```
-
-Using IP address:
-
-```bash
-./keylights -h=192.168.0.10 t+
-./keylights -h=192.168.0.10 t-
-```
+![Screenshot From 2025-01-10 18-25-15](https://github.com/user-attachments/assets/66218190-43a7-4d12-9b70-e241535eb591)
 
 ### Hint
 
-Find hostnames of your devices using the following command:
+The app will find the lights IP automatically, if it doesn't you can write the IP name manually, to find it you can use this command:
 
-`avahi-browse -r -t _elg._tcp`
+avahi-browse -r -t _elg._tcp
+
+### I need your help
+
+I have no much time to spend on this, if you do, feel free to fork this and upload the app to flathub or snapcraft
