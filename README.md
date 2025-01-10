@@ -18,7 +18,7 @@ Local Network: Both the PC and Elgato Key Light must be on the same network.
 ## Installation
 
 
-You can install it by using this command:
+You can install it by running this command in the script's directory:
 
 sh miaucontrol.sh
 
