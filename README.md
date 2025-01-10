@@ -5,7 +5,9 @@ Simple GUI Application to control my Elgato Key Light
 # Requirements
 
 Operating System: Linux (any modern distribution).
+
 Avahi: Required for device discovery.
+
 Python: Version 3.6 or higher.
 
 Python Libraries:
@@ -13,6 +15,7 @@ PyGObject (Gtk 4.0)
 Requests
 
 Compatible Hardware: Elgato Key Light (API HTTP on port 9123).
+
 Local Network: Both the PC and Elgato Key Light must be on the same network. 
 
 ## Installation
